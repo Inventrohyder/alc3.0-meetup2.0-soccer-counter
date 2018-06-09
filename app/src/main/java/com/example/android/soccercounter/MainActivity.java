@@ -24,82 +24,102 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void addGoals(View v){
+    public void addGoals(View v) {
         goals += 1;
         displayGoals(goals);
     }
 
-    public void addReds(View v){
+    public void reset(View v) {
+        goals = 0;
+        reds = 0;
+        yellows = 0;
+        fouls = 0;
+        goalsb = 0;
+        redsb = 0;
+        yellowsb = 0;
+        foulsb = 0;
+
+        displayGoals(goals);
+        displayReds(reds);
+        displayYellows(yellows);
+        displayFouls(fouls);
+        displayGoalsb(goalsb);
+        displayRedsb(redsb);
+        displayYellowsb(yellowsb);
+        displayFoulsb(foulsb);
+    }
+
+    public void addReds(View v) {
         reds += 1;
         displayReds(reds);
     }
 
-    public void addYellows(View v){
+    public void addYellows(View v) {
         yellows += 1;
         displayYellows(yellows);
     }
 
-    public void addFoals(View v){
+    public void addFoals(View v) {
         fouls += 1;
         displayFouls(fouls);
     }
 
-    void displayGoals(int value){
+    void displayGoals(int value) {
         TextView toChange = (TextView) findViewById(R.id.goals_text);
         toChange.setText(String.valueOf(value));
     }
 
-    void displayReds(int value){
+    void displayReds(int value) {
         TextView toChange = (TextView) findViewById(R.id.reds_text);
         toChange.setText(String.valueOf(value));
     }
 
-    void displayYellows(int value){
+    void displayYellows(int value) {
         TextView toChange = (TextView) findViewById(R.id.yellows_text);
         toChange.setText(String.valueOf(value));
     }
 
-    void displayFouls(int value){
+    void displayFouls(int value) {
         TextView toChange = (TextView) findViewById(R.id.foals_text);
         toChange.setText(String.valueOf(value));
     }
 
-    public void addGoalsb(View v){
+    public void addGoalsb(View v) {
         goalsb += 1;
         displayGoalsb(goalsb);
     }
 
-    public void addRedsb(View v){
+    public void addRedsb(View v) {
         redsb += 1;
         displayRedsb(redsb);
     }
 
-    public void addYellowsb(View v){
+    public void addYellowsb(View v) {
         yellowsb += 1;
         displayYellowsb(yellowsb);
     }
 
-    public void addFoalsb(View v){
+    public void addFoalsb(View v) {
         foulsb += 1;
         displayFoulsb(foulsb);
     }
 
-    void displayGoalsb(int value){
+    void displayGoalsb(int value) {
         TextView toChange = (TextView) findViewById(R.id.goals_textb);
         toChange.setText(String.valueOf(value));
     }
 
-    void displayRedsb(int value){
+    void displayRedsb(int value) {
         TextView toChange = (TextView) findViewById(R.id.reds_textb);
         toChange.setText(String.valueOf(value));
     }
 
-    void displayYellowsb(int value){
+    void displayYellowsb(int value) {
         TextView toChange = (TextView) findViewById(R.id.yellows_textb);
         toChange.setText(String.valueOf(value));
     }
 
-    void displayFoulsb(int value){
+    void displayFoulsb(int value) {
         TextView toChange = (TextView) findViewById(R.id.foals_textb);
         toChange.setText(String.valueOf(value));
     }
