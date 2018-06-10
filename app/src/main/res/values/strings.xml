@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Soccer Counter</string>
+    <string name="team_a">TEAM A</string>
+    <string name="goals">Goals</string>
+    <string name="_0">0</string>
+    <string name="foals">Foals</string>
+    <string name="yellow_cards">Yellow Cards</string>
+    <string name="red_cards">Red cards</string>
+    <string name="team_b">TEAM B</string>
 </resources>
